@@ -29,40 +29,5 @@
 		<module>spark-spring-boot-autoconfigure</module>
 		<module>spark-spring-boot-starter</module>
 	</modules>
-		<repositories>
-		<repository>
-			<id>snapshots</id>
-			<name>nexus repository</name>
-			<url>http://jira.feezu.cn:8085/nexus/content/repositories/snapshots</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>thridpaty</id>
-			<name>nexus repository</name>
-			<url>http://jira.feezu.cn:8085/nexus/content/repositories/thridparty</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
-	<distributionManagement>
-		<repository>
-			<id>releases</id>
-			<name>Internal Releases</name>
-			<url>http://jira.feezu.cn:8085/nexus/content/repositories/releases</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshots</id>
-			<name>Internal Snapshots</name>
-			<url>http://jira.feezu.cn:8085/nexus/content/repositories/snapshots</url>
-		</snapshotRepository>
-	</distributionManagement>
+		
 </project>
