@@ -30,7 +30,7 @@ public class SparkAutoConfiguration {
 	public SparkConf sparkConf() {
 		Optional.ofNullable(sparkProperties.getAppname()).orElseThrow(() -> new IllegalArgumentException("Spark Conf Bean not created. App Name not defined."));
 		final SparkConf conf = new SparkConf();
-		sparkProperties.getProps().forEach((prop, value) -> conf.set("spark." + (String)prop, (String)value)); 
+		sparkProperties.getProps().forEach((prop, value) -> conf.set("spark." + (String)prop, String.valueOf(value))); 
 		return conf.setAppName(sparkProperties.getAppname()).setMaster(Optional.ofNullable(sparkProperties.getMaster()).map(master -> master).orElse("local"));
 	}
 
